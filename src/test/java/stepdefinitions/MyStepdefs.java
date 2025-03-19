@@ -1,9 +1,9 @@
-package stepdefinitions
+package stepdefinitions;
 
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.*;
-import io.github.bonigarcia.wdm.WebDriverManager;
+
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -19,7 +19,7 @@ public class MyStepdefs{
 
     @Before
     public void setUp() {
-        WebDriverManager.chromedriver().setup();
+
         driver = new ChromeDriver();
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
